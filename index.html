@@ -11,8 +11,9 @@
             <button id="restart-button"class="button button-restart">Restart</button>            
             <input style="text-align: center; width: 50px; margin-left: 10px;"type="number" name="density" id="density" placeholder="Density" value="50">
             <label for="density">Density</label>
+            <span class="input">
             <input style="text-align: center; width: 50px; margin-left: 10px;"type="number" name="columns" id="columns" placeholder="Columbs" value="75">
-            <label for="columns">Columns</label>            
+            <label for="columns">Columns</label></span>            
             <button id="stop-button" style="margin-left: 10px;" class="button button-stop">Stop</button>
         </span>
     </div>
@@ -215,6 +216,10 @@
     }
     .button-restart:hover {
         background-color: #01579b;
+    }
+    .input {
+        display: inline-block;
+    white-space: nowrap;
     }
 /**
 * Add a transition to the label and input.
